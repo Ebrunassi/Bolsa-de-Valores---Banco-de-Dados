@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Cotacao</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="indexCSS.css">
+    </head>
+    <body>
+        <fieldset>
+            <legend><strong>Menu</strong></legend>
+            <form action="CotacaoServlet" method="post">
+
+                <a href="/BolsaValores/Criar">Criar</a>
+                <a href="/BolsaValores/Deletar.jsp">Deletar</a>
+                <a href="/BolsaValores/Alterar.html">Alterar</a>
+    <!--            <a href="/BolsaValores/ListaTodos">Mostrar Banco</a>-->
+                <input type="submit" name="button" value="visualizar">
+                <h2>Json</h2>
+                Entre com o texto o formato json<br />
+                <textarea rows="20" cols="80" name="json"></textarea><br>
+                <input type="submit" name="button" value="adicionaJson" />
+               <br />
+            </form>
+            <ul class="pager">
+                <li><a href="/BolsaValores/index_estatisticas.html">Ver estatísticas</a></li>
+            </ul> 
+        </fieldset>
+    </body>
+</html>

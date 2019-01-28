@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="EstatisticasServlet" method="post">
+                
+                <div class="jumbotron text-center">
+                 <h3>Estatísticas</h3>
+                 <p>Escolha a estatística que deseja analisar</p>
+               </div>
+
+               <div class="container">
+                 <div class="row">
+                   <div class="col-sm-4">
+                     <h3>Analise do valor de cotações</h3>
+                     <p>Veja as empresas que possuem os maiores valores de ações</p>
+                     <button type="submit" name="button" class="btn btn-default" value="estatisticas">Estatisticas</button>
+                   </div>
+                   <div class="col-sm-4">
+                     <h3>Acompanhamento das empresas</h3>
+                     <p>Veja como todas as empresas se comportaram neste período de analise e a variação dos valores de cotações</p>
+                     <!--<input type="submit" name="button" value="empresas_crescimento" />-->
+                     <button type="submit" name="button" class="btn btn-default" value="crescimento">Crescimento</button>
+                   </div>
+                   <div class="col-sm-4">
+                     <h3>Top 3 empresas que mais cresceram</h3>
+                     <p>Veja as três empresas que mais apresentaram lucro</p>
+                     <button type="submit" name="button" class="btn btn-default" value="top3_crescimento">Top 3</button>
+                   </div>
+                   <div class="col-sm-4">
+                     <h3>Top 3 empresas que tiveram prejuizo</h3>
+                     <p>Veja as três empresas que mais apresentaram prejuízo</p>
+                     <button type="submit" name="button" class="btn btn-default" value="top3_prejuizo">Top 3</button>
+                   </div>
+                   <div class="col-sm-4">
+                     <h3>Estatísticas gerais</h3>
+                     <p>Escolha e veja o histórico de cotações e a projeção de uma determinada empresa</p>
+                      <select onchange="this.form.submit()" name="opcao">
+                        <option value="cielo">Cielo</option>
+                        <option value="ambev">Ambev</option>
+                        <option value="itau">Itau</option>
+                        <option value="vale">Vale</option>
+                        <option value="santander">Santander</option>
+                        <option value="petrobras">Petrobras</option>
+                        <option value="bahema">Bahema</option>
+                        <option value="banrisul">Banrisul</option>
+                        <option value="magazine">Magazine Luiza</option>
+                      </select> 
+                   </div>
+                   <div class="col-sm-4">
+                     <h3>Simulação de investimento</h3>
+                     <p>Veja quais seriam os seus lucros caso tivesse investido neste período analisado!</p>
+                     <!--<input type="submit" name="button" value="empresas_crescimento" />-->
+                     <button type="submit" name="button" class="btn btn-default" value="investimento">Invista!</button>
+                   </div>               
+
+                     
+                     
+                 </div>
+                </div> 
+
+        </form>
+    </body>
+</html>
